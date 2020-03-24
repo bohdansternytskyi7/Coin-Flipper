@@ -1,0 +1,14 @@
+{
+  "name": "coin-flipper",
+  "version": "1.0.0",
+  "description": "Coin Flipper | Game",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

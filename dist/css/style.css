@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:focus {
+  outline: none; }
+
+body {
+  background: #ddd; }
+
+.coin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .coin .coin-img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    transition: all .6s ease-in-out; }
+  .coin .btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background: #f80;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s cubic-bezier(0.01, 0.94, 0.15, 1.03);
+    cursor: pointer; }
+    .coin .btn:hover {
+      background: #fd7200; }
+  .coin .flip {
+    transform: rotateX(720deg); }
