@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,31 +8,72 @@
   outline: none; }
 
 body {
-  background: #ddd; }
+  background: #dcf5ff;
+  font-family: 'Dosis', sans-serif; }
 
-.coin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .coin .coin-img {
-    margin-top: 20px;
-    width: 150px;
-    height: 150px;
-    align-self: center;
-    transition: all .6s ease-in-out; }
-  .coin .btn {
-    margin-top: 40px;
-    padding: 10px 20px;
-    background: #f80;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 1rem; }
+  .container .info {
+    position: relative;
+    margin: 0 auto;
+    background: #07daa5;
+    color: #07daa5;
+    padding: 1rem;
     font-size: 1.2rem;
-    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s cubic-bezier(0.01, 0.94, 0.15, 1.03);
-    cursor: pointer; }
-    .coin .btn:hover {
-      background: #fd7200; }
-  .coin .flip {
-    transform: rotateX(720deg); }
+    border-radius: 10px;
+    width: 350px;
+    cursor: pointer;
+    clip-path: circle(10% at 8% 25%);
+    transition: all .5s ease-in-out; }
+    .container .info:hover {
+      clip-path: circle(75%);
+      background: #00b6ff;
+      color: #000; }
+    .container .info span {
+      display: block;
+      font-weight: bold;
+      transition: color .5s;
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      padding: 10px;
+      opacity: 1;
+      color: #000;
+      transition: all .2s ease-in-out; }
+    .container .info:hover span {
+      opacity: 0; }
+  .container .coin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .coin .coin-img {
+      margin-top: 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 10px 2px #fff;
+      align-self: center;
+      transition: all .6s ease-out; }
+    .container .coin .btn {
+      font-family: 'Dosis', sans-serif;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: #00b6ff;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      font-size: 1.2rem;
+      box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.5);
+      transition: all .2s ease-in-out;
+      cursor: pointer; }
+      .container .coin .btn:hover {
+        background: #07daa5; }
+    .container .coin .flip {
+      transform: rotateX(720deg); }
